@@ -20,7 +20,7 @@ https://forms.gle/8AoWLiYzGXu3BNMv8
 
 
 Again, thank you, and enjoy using the browser
-- Cadecraft (2022/4/30)
+- Cadecraft (2022/7/2)
 
 
 My site: https://cadecraft.herokuapp.com
