@@ -26,3 +26,4 @@ Again, thank you, and enjoy using the browser
 My site: https://cadecraft.herokuapp.com
 YouTube: https://www.youtube.com/c/AwesomeCadecraft
 Discord Server: https://discord.gg/wahdQHBs4Z
+GitHub Repository: https://github.com/Cadecraft/voltaire-browser-source
