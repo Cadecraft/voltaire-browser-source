@@ -29,7 +29,7 @@ To add:
   > None
   UPCOMING
   > Add background requests (morning star)
-  > Improve unblocked discord (use faster proxy service) ?
+  > Improve unblocked discord further (use faster proxy service) ?
   > CTRL+F search (bottom right inspect button)
   > Adblock (similar method as fullscreen?)
   > ctrl+t/ctrl+w suppport, even in webview ?
@@ -38,7 +38,6 @@ To add:
 To test:
   > Microphone permissions ?
   > New discord: check with testers (kuv-.)
-  > Release (github, website, announcements)
 
 Promotion:
   > Continue to share the browser publicly
@@ -46,6 +45,9 @@ Promotion:
   > Improve github structure
 
 Recently added:
+  --0.0.9.8
+  > None
+
   --0.0.9.7
   > Improved background selections (replaced one bg request, replaced one existing img bg)
   > Added microphone permissions
