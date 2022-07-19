@@ -18,7 +18,7 @@ You have my permission to modify this however you want to account for any new bl
 
 Wanna know why it is called the Voltaire browser? (hint: i took AP euro)
 
-- Cadecraft 2022/6/25
+- Cadecraft 2022/7/18
 
 */
 
@@ -28,6 +28,7 @@ To add:
   THIS VERSION
   > None
   UPCOMING
+  > Save cookies
   > Add background requests (morning star)
   > Improve unblocked discord further (use faster proxy service) ?
   > CTRL+F search (bottom right inspect button)
@@ -37,16 +38,18 @@ To add:
 
 To test:
   > Microphone permissions ?
-  > New discord: check with testers (kuv-.)
+  > GitHub repo link + new image
 
 Promotion:
   > Continue to share the browser publicly
   > Eventually publish on chrome web store
-  > Improve github structure
+  > Publish as GitHub release
 
 Recently added:
   --0.0.9.8
-  > None
+  > Added link to GitHub repo
+  > Added new help image for clarity
+  > Fully removed menu box overlap for all boxes, including "help" and "discal"
 
   --0.0.9.7
   > Improved background selections (replaced one bg request, replaced one existing img bg)
@@ -532,6 +535,7 @@ var browser = (function(configModule, tabsModule) {
           // Toggle visibility of help box
           if(document.getElementById('helpbox').style.display == 'none') {
             document.getElementById('helpbox').style.display = 'inline'
+            document.getElementById('settingsbox').style.display = 'none' // Hide to avoid overlap
           }
           else {
             document.getElementById('helpbox').style.display = 'none'
@@ -550,7 +554,7 @@ var browser = (function(configModule, tabsModule) {
           // Toggle visibility of settings box
           if(document.getElementById('settingsbox').style.display == 'none') {
             document.getElementById('settingsbox').style.display = 'inline'
-            document.getElementById('helpbox').style.display = 'none' // Hide help to avoid overlap
+            document.getElementById('helpbox').style.display = 'none' // Hide to avoid overlap
           }
           else {
             document.getElementById('settingsbox').style.display = 'none'
@@ -564,6 +568,7 @@ var browser = (function(configModule, tabsModule) {
         document.getElementById('inspect').onclick = function() {
           // Toggle visibility of inspect box
           document.getElementById('menubox').style.display = 'none'
+          document.getElementById('discalbox').style.display = 'none'
           if(document.getElementById('inspectbox').style.display == 'none') {
             document.getElementById('inspectbox').style.display = 'inline'
           }
@@ -593,6 +598,7 @@ var browser = (function(configModule, tabsModule) {
         document.getElementById('menu').onclick = function() {
           // Toggle visibility of menu box
           document.getElementById('inspectbox').style.display = 'none'
+          document.getElementById('discalbox').style.display = 'none'
           if(document.getElementById('menubox').style.display == 'none') {
             document.getElementById('menubox').style.display = 'inline'
             dinoactive = true;
@@ -654,6 +660,9 @@ var browser = (function(configModule, tabsModule) {
         }
         document.getElementById('lk-site').onclick = function() {
           browser.tabs.getSelected().navigateTo('https://cadecraft.herokuapp.com/');
+        }
+        document.getElementById('lk-git-repo').onclick = function() {
+          browser.tabs.getSelected().navigateTo('https://github.com/Cadecraft/voltaire-browser-source');
         }
         /*document.getElementById('lk-form').onclick = function() {
           browser.tabs.getSelected().navigateTo('https://docs.google.com/forms/d/e/1FAIpQLSf-7Cunu1xQru9nr5dMjBWrS5mqCGDrGeEyru7i-wEzEd3CeQ/viewform?usp=sf_link');
