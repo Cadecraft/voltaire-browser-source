@@ -1,7 +1,7 @@
  /*
  Hello, random person looking through this source code.
 I'm Cadecraft (find me at https://www.youtube.com/c/AwesomeCadecraft
-or https://cadecraft.herokuapp.com
+or https://cadecraft.github.io
 or my discord server https://discord.gg/wahdQHBs4Z )
 
 How's your day been?
@@ -28,17 +28,22 @@ To add:
   THIS VERSION
   > None
   UPCOMING
-  > Save cookies
+  > Save cookies ( https://stackoverflow.com/questions/23684583/how-to-keep-cookies-with-webview-based-chrome-hosted-app )
+                 ( https://stackoverflow.com/questions/25697697/what-is-partition-attribute-for-webview-tag-in-chrome-app-api )
   > Add background requests (morning star)
   > Improve unblocked discord further (use faster proxy service) ?
   > CTRL+F search (bottom right inspect button)
   > Adblock (similar method as fullscreen?)
   > ctrl+t/ctrl+w suppport, even in webview ?
   > Mouse pointer lock (for remote desktop games)
+  > Make zoom in/out work like normal, rather than scaling the window
+  > Make tabs show page titles?
+  > Picture in picture
+  > Flash player
 
 To test:
   > Microphone permissions ?
-  > GitHub repo link + new image
+  > GitHub repo link + new image + new cadecraft homepg link
 
 Promotion:
   > Continue to share the browser publicly
@@ -50,6 +55,7 @@ Recently added:
   > Added link to GitHub repo
   > Added new help image for clarity
   > Fully removed menu box overlap for all boxes, including "help" and "discal"
+  > Updated link to head to my new website
 
   --0.0.9.7
   > Improved background selections (replaced one bg request, replaced one existing img bg)
@@ -528,7 +534,7 @@ var browser = (function(configModule, tabsModule) {
         document.getElementById('br-name').innerHTML = 'VOLTAIRE BROWSER<br>v'+ver+' &#8226; <a id="mysite">My site</a>	&#8226; <a id="settings">Settings</a>	&#8226; <a id="help">Help</a>';
         // On click mysite
         document.getElementById('mysite').onclick = function() {
-          browser.tabs.getSelected().navigateTo('https://cadecraft.herokuapp.com/');
+          browser.tabs.getSelected().navigateTo('https://cadecraft.github.io/');
         }
         // On click help
         document.getElementById('help').onclick = function() {
@@ -659,7 +665,7 @@ var browser = (function(configModule, tabsModule) {
           browser.tabs.getSelected().navigateTo('https://youtube.com/c/AwesomeCadecraft/');
         }
         document.getElementById('lk-site').onclick = function() {
-          browser.tabs.getSelected().navigateTo('https://cadecraft.herokuapp.com/');
+          browser.tabs.getSelected().navigateTo('https://cadecraft.github.io/');
         }
         document.getElementById('lk-git-repo').onclick = function() {
           browser.tabs.getSelected().navigateTo('https://github.com/Cadecraft/voltaire-browser-source');

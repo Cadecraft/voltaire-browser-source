@@ -23,7 +23,7 @@ Again, thank you, and enjoy using the browser
 - Cadecraft (2022/7/2)
 
 
-My site: https://cadecraft.herokuapp.com
+My site: https://cadecraft.github.io
 YouTube: https://www.youtube.com/c/AwesomeCadecraft
 Discord Server: https://discord.gg/wahdQHBs4Z
 GitHub Repository: https://github.com/Cadecraft/voltaire-browser-source
