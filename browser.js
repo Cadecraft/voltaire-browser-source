@@ -18,7 +18,7 @@ You have my permission to modify this however you want to account for any new bl
 
 Wanna know why it is called the Voltaire browser? (hint: i took AP euro)
 
-- Cadecraft 2022/7/18
+- Cadecraft 2022/8/26
 
 */
 
@@ -43,7 +43,6 @@ To add:
 
 To test:
   > Microphone permissions ?
-  > GitHub repo link + new image + new cadecraft homepg link
 
 Promotion:
   > Continue to share the browser publicly
