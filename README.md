@@ -5,4 +5,4 @@ In order to install, please check this doc: https://docs.google.com/document/d/1
 
 See more info on my website, https://cadecraft.github.io/.
 
-NOTE: This is the most recent version of the browser, so it is potentially unstable--if you are hoping to download and use it, please use the drive link (on my website) to the last stable version.
+NOTE: This is the most recent version of the browser--please use the drive link (on my website) or the releases panel on the right to get a stable version
