@@ -1,4 +1,5 @@
-Thanks for downloading *Voltaire Browser*, the latest fully functional unblocked browser!
+Thanks for downloading *Voltaire Browser*,
+a fully functional/customizable Chromebook browser for those who feel limited by Chrome!
 
 
 == HOW TO INSTALL ==
@@ -13,14 +14,8 @@ If you are having any issues or feedback, join the Discord server. I'm always ha
 https://discord.gg/wahdQHBs4Z
 
 
-== OPTIONAL FORM ==
-Also, I really want to know how far Voltaire Browser is spreading, and I have no easy way to do that.
-So, answering this form would help me:
-https://forms.gle/8AoWLiYzGXu3BNMv8
-
-
 Again, thank you, and enjoy using the browser
-- Cadecraft (2022/7/2)
+- Cadecraft 2022/07/02
 
 
 My site: https://cadecraft.github.io

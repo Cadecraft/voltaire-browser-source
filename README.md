@@ -1,5 +1,6 @@
 # voltaire-browser
-A fully functional browser app for Chromebooks by Cadecraft. Features: bookmarks, fast google search, quick links, tab management, and efficient loading.
+A fully functional/customizable Chromebook browser for those who feel limited by Chrome.
+Features bookmarks, tabs, backgrounds, efficient loading, quick google search, privacy features, etc.
 
 In order to install, please check this doc: https://docs.google.com/document/d/1JQmokOOMqgV5BFe61xBBSkH7UI06-6SHG1IeSalpvKo/edit
 
