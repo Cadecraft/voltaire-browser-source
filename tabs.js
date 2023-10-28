@@ -355,6 +355,6 @@ If you're reading this, I have an important message for you.
 
 Nobody can lift a quain stone alone.
 
-- Cadecraft 2022/5/14
+- Cadecraft 2022/05/14
 
 */

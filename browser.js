@@ -1,24 +1,26 @@
- /*
- Hello, random person looking through this source code.
-I'm Cadecraft (find me at https://www.youtube.com/c/AwesomeCadecraft
-or https://cadecraft.github.io
-or my discord server https://discord.gg/wahdQHBs4Z )
+/*
+Hello, random person looking through this source code.
+I'm Cadecraft (find me at:
+  - https://www.youtube.com/c/AwesomeCadecraft
+  - https://cadecraft.github.io
+  - https://discord.gg/wahdQHBs4Z
+)
 
 How's your day been?
 Mine was good, ty for asking.
 
-Oh btw you should check out this link https://www.youtube.com/watch?v=dQw4w9WgXcQ
+Oh btw you should check out this link: https://www.youtube.com/watch?v=dQw4w9WgXcQ
 
 
 
 Wondering how I made this browser?
 I used Chrome Apps (documentation: https://developer.chrome.com/docs/apps/manifest/ )
 This was originally based off of the original Obscure 4 browser, so thanks a lot to m.boswell522 who made it.
-You have my permission to modify this however you want to account for any new blocks your school/organization imposes.
+You have my permission to modify this however you want.
 
 Wanna know why it is called the Voltaire browser? (hint: i took AP euro)
 
-- Cadecraft 2022/8/26
+- Cadecraft 2022/08/26
 
 */
 
@@ -28,18 +30,20 @@ To add:
   THIS VERSION
   > None
   UPCOMING
+  > Move bookmarks up and down on the list with arrows
   > Save cookies ( https://stackoverflow.com/questions/23684583/how-to-keep-cookies-with-webview-based-chrome-hosted-app )
                  ( https://stackoverflow.com/questions/25697697/what-is-partition-attribute-for-webview-tag-in-chrome-app-api )
   > Add background requests (morning star)
   > Improve unblocked discord further (use faster proxy service) ?
   > CTRL+F search (bottom right inspect button)
   > Adblock (similar method as fullscreen?)
-  > ctrl+t/ctrl+w suppport, even in webview ?
+  > Open local files in the browser ?
+X > ctrl+t/ctrl+w suppport, even in webview ?
   > Mouse pointer lock (for remote desktop games)
   > Make zoom in/out work like normal, rather than scaling the window
   > Make tabs show page titles?
-  > Picture in picture
-  > Flash player
+X > Picture in picture
+X > Flash player
 
 To test:
   > Microphone permissions ?
@@ -50,6 +54,10 @@ Promotion:
   > Publish as GitHub release
 
 Recently added:
+  --0.0.9.9
+  > Adding arrows to move items in the list
+  > Updated several descriptions/comments
+
   --0.0.9.8
   > Added link to GitHub repo
   > Added new help image for clarity
@@ -74,7 +82,7 @@ Recently added:
   > Added dino game
   > Added Windows XP Wallpaper
   > Added usage form link
-  > Changed discord server link - goes directly, not through croxyproxy
+  > Changed discord server link - goes directly
   > UI improve (removed useless croxyproxy link)
   > UI improve (tab styling)
   > UI improve (tab names)
@@ -98,8 +106,8 @@ Recently added:
   > Bookmarks
   > Help menu
   > UI improvements
-  > Unblocked discord!
-  > Unblocked discord server join link
+  > Proxy to access discord
+  > Proxy to access discord server join link
   > Added discord warning
 */
 
@@ -316,6 +324,7 @@ function updatebkms() {
       // Set inner HTML
       thisspan.innerHTML = '&nbsp;<button id="bkmx-'+thisi+'">X</button>&nbsp;&nbsp;&nbsp;<a id="bkmlk-'+thisi+'">' // Link
       +bkmlist[thisi].url.substr(0, 32)+trimmed+'</a>' // Link url
+      +'<button id="bkmup-'+thisi+'" style="float:right; margin-left:5px;">&#8593</button>' // Name box up arrow
       +'<input id="bkmnm-'+thisi+'" type="text" style="width:200px; float:right; height:15px;"'// Name box
       +' value="'+bkmlist[thisi].name+'" placeholder="Name this bookmark..."></input>'; // Name box name
 
@@ -338,6 +347,11 @@ function updatebkms() {
       document.getElementById('bkmnm-'+thisi).onchange = function() {
         // Rename
         bkmlist[thisi].name = document.getElementById('bkmnm-'+thisi).value;
+        updatebkms();
+      }
+      document.getElementById('bkmup-'+thisi).onclick = function() {
+        // Move UP in list (TODO)
+        
         updatebkms();
       }
     }
@@ -1174,6 +1188,6 @@ If you're reading this, I have an important message for you.
 To survive hardship
 you must prepare for hardship.
 
-- Cadecraft 2022/3/27
+- 2022/03/27
 
 */
